@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import EnquiryModal from './EnquiryModal';
-import about1 from '../assets/img/platinum/1 (8).jpg';
-import about2 from '../assets/img/platinum/1 (4).jpg';
+import about1 from '../assets/img/platinum/Cam_07.jpg';
+import about2 from '../assets/img/platinum/Living Cam.jpg';
 import reraLogo from '../assets/img/platinum_Rera.png';
 
 const AboutUs = () => {
@@ -31,8 +31,8 @@ const AboutUs = () => {
 
             {/* Animated Ambient Background Globs */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-                <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] bg-[#9E212A]/10 blur-[120px] rounded-full animate-pulse transition-all duration-[4000ms]"></div>
-                <div className="absolute bottom-[-10%] right-[-10%] w-[45%] h-[55%] bg-[#D4AF37]/15 blur-[140px] rounded-full animate-pulse transition-all duration-[6000ms]" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] bg-[#03012C]/10 blur-[120px] rounded-full animate-pulse transition-all duration-[4000ms]"></div>
+                <div className="absolute bottom-[-10%] right-[-10%] w-[45%] h-[55%] bg-[#03012C]/15 blur-[140px] rounded-full animate-pulse transition-all duration-[6000ms]" style={{ animationDelay: '1s' }}></div>
             </div>
 
             <div className="lux-container max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -47,10 +47,10 @@ const AboutUs = () => {
                             
                             <h2 className="text-[34px] md:text-[44px] font-heading mb-6 leading-[1.15] text-luxury-black">
                                 Prime Living, <br />
-                                <span className="text-[#9E212A] italic bg-clip-text relative inline-block">
+                                <span className="text-[#03012C] italic bg-clip-text relative inline-block">
                                     Pure Sophistication
                                     {/* Animated underline */}
-                                    <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-gradient-to-r from-[#9E212A] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></span>
+                                    <span className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-gradient-to-r from-[#03012C] to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left"></span>
                                 </span>
                             </h2>
                             
@@ -67,9 +67,9 @@ const AboutUs = () => {
                                 { label: "Development", value: "1.23 Acres | 62 Apartments" },
                                 { label: "Location", value: "Koramangala, Bengaluru" }
                             ].map((item, idx) => (
-                                <div key={idx} className="bg-white/60 backdrop-blur-md border border-white p-4 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(158,33,42,0.1)] hover:-translate-y-2 transition-all duration-500 group">
+                                <div key={idx} className="bg-white/60 backdrop-blur-md border border-white p-4 rounded-xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(3,1,44,0.1)] hover:-translate-y-2 transition-all duration-500 group">
                                     <div className="flex items-center gap-3">
-                                        <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-[#9E212A] group-hover:text-white transition-colors duration-500 transform group-hover:rotate-12">
+                                        <div className="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center text-gold group-hover:bg-[#03012C] group-hover:text-white transition-colors duration-500 transform group-hover:rotate-12">
                                             <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                                             </svg>
@@ -96,7 +96,7 @@ const AboutUs = () => {
                             <div className="flex items-center justify-between w-full gap-2 sm:gap-4">
                                 <button 
                                     onClick={() => setIsModalOpen(true)} 
-                                    className="bg-[#9E212A] text-white flex-1 flex items-center justify-center gap-2 py-3 md:py-3.5 text-[10px] sm:text-[11px] md:text-[13px] font-heading tracking-wider hover:bg-[#7e1921] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-sm"
+                                    className="bg-[#03012C] text-white flex-1 flex items-center justify-center gap-2 py-3 md:py-3.5 text-[10px] sm:text-[11px] md:text-[13px] font-heading tracking-wider hover:bg-[#020118] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-sm"
                                 >
                                     <svg className="w-4 h-4 md:w-5 md:h-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -122,7 +122,7 @@ const AboutUs = () => {
                             
                             {/* Animated Gold Ring Background */}
                             <div className="absolute w-[450px] h-[450px] border-[1px] border-gold/40 rounded-full animate-[spin_20s_linear_infinite] z-0"></div>
-                            <div className="absolute w-[350px] h-[350px] border-[1px] border-dashed border-[#9E212A]/30 rounded-full animate-[spin_15s_linear_infinite_reverse] z-0"></div>
+                            <div className="absolute w-[350px] h-[350px] border-[1px] border-dashed border-[#03012C]/30 rounded-full animate-[spin_15s_linear_infinite_reverse] z-0"></div>
 
                             {/* Floating Main Image */}
                             <div className="absolute z-10 right-0 top-[10%] w-[75%] rounded-2xl overflow-hidden shadow-2xl animate-float-slow border-4 border-white/50 backdrop-blur-sm">

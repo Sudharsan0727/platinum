@@ -55,10 +55,10 @@ const ProjectHighlights = () => {
     ];
 
     return (
-        <section id="highlights" className="section-padding bg-[#fff1f2] relative overflow-hidden">
+        <section id="highlights" className="section-padding bg-[#f4f3ff] relative overflow-hidden">
             {/* Background Texture/Pattern */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none select-none">
-                <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#9E212A_1px,transparent_1px)] [background-size:40px_40px]"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#03012C_1px,transparent_1px)] [background-size:40px_40px]"></div>
             </div>
 
             <div className="lux-container relative z-10">
@@ -83,7 +83,7 @@ const ProjectHighlights = () => {
                     {amenities.map((item, index) => (
                         <div 
                             key={index} 
-                            className="group bg-white rounded-[4px] min-h-[200px] p-6 lg:p-8 flex flex-col items-center justify-center text-center transition-all duration-500 hover:bg-[#9E212A] hover:-translate-y-2 cursor-pointer shadow-sm animate-fade-up animate-delay-1"
+                            className="group bg-white rounded-[4px] min-h-[200px] p-6 lg:p-8 flex flex-col items-center justify-center text-center transition-all duration-500 hover:bg-[#03012C] hover:-translate-y-2 cursor-pointer shadow-sm animate-fade-up animate-delay-1"
                         >
                             <div className="flex flex-col items-center justify-center transition-transform duration-500 group-hover:-translate-y-1">
                                 {/* Icon matching Amenities style */}

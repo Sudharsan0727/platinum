@@ -176,7 +176,7 @@ const Rooms = () => {
     };
 
     return (
-        <section id="floor-plan" className="section-padding bg-[#fff1f2] relative">
+        <section id="floor-plan" className="section-padding bg-[#f4f3ff] relative">
             
             <div className="lux-container">
                 {/* Top Header Section */}

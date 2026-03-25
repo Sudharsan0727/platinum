@@ -102,7 +102,7 @@ const AmenitiesIconGrid = () => {
                         WORLD-CLASS FACILITIES
                     </span>
                     <h2 className="text-[34px] md:text-[44px] font-heading leading-tight text-luxury-black mb-5">
-                        Exceptional <span className="text-[#9E212A] italic">Amenities</span>
+                        Exceptional <span className="text-[#03012C] italic">Amenities</span>
                     </h2>
                     <p className="font-body text-gray-500 text-[15px] max-w-2xl mx-auto">
                         Experience a lifestyle designed for your utmost comfort, wellness, and leisure with our thoughtfully curated premium spaces.
@@ -114,17 +114,17 @@ const AmenitiesIconGrid = () => {
                     {allAmenities.map((item, index) => (
                         <div 
                             key={index}
-                            className="group flex flex-col items-center justify-center p-6 bg-white border border-gray-100 rounded-xl hover:border-gold hover:shadow-[0_15px_30px_-10px_rgba(212,175,55,0.2)] transition-all duration-500 hover:-translate-y-2 cursor-pointer aspect-square relative overflow-hidden"
+                            className="group flex flex-col items-center justify-center p-6 bg-white border border-gray-100 rounded-xl hover:border-gold hover:shadow-[0_15px_30px_-10px_rgba(3,1,44,0.2)] transition-all duration-500 hover:-translate-y-2 cursor-pointer aspect-square relative overflow-hidden"
                             style={{ animationDelay: `${index * 100}ms` }}
                         >
                             {/* Hover accent top line */}
-                            <span className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold to-[#9E212A] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+                            <span className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold to-[#03012C] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
                             
-                            <div className="text-gray-400 group-hover:text-[#9E212A] transition-colors duration-500 mb-4 transform group-hover:scale-110">
+                            <div className="text-gray-400 group-hover:text-[#03012C] transition-colors duration-500 mb-4 transform group-hover:scale-110">
                                 {React.cloneElement(item.icon, { className: "w-10 h-10 md:w-12 md:h-12 m-0 stroke-[1.2]" })}
                             </div>
                             
-                            <h4 className="text-[13px] md:text-[14px] font-heading text-center text-luxury-black group-hover:text-[#9E212A] transition-colors duration-500 leading-tight px-2">
+                            <h4 className="text-[13px] md:text-[14px] font-heading text-center text-luxury-black group-hover:text-[#03012C] transition-colors duration-500 leading-tight px-2">
                                 {item.title}
                             </h4>
                         </div>
@@ -135,7 +135,7 @@ const AmenitiesIconGrid = () => {
                 <div className="mt-16 flex justify-center animate-fade-up animate-delay-2">
                     <button 
                         onClick={() => setIsModalOpen(true)} 
-                        className="bg-[#9E212A] text-white flex items-center justify-center gap-2 py-3.5 px-10 text-[12px] md:text-[13px] font-heading tracking-widest hover:bg-[#7e1921] hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
+                        className="bg-[#03012C] text-white flex items-center justify-center gap-2 py-3.5 px-10 text-[12px] md:text-[13px] font-heading tracking-widest hover:bg-[#020118] hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
                     >
                         <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
