@@ -85,18 +85,18 @@ const AboutUs = () => {
                         </div>
 
                         {/* Actions */}
-                        <div className="w-full pt-4 animate-fade-up animate-delay-3">
-                            <div className="mb-6 flex">
+                        <div className="w-full pt-1 animate-fade-up animate-delay-3">
+                            <div className="mb-2 flex">
                                 <img 
                                     src={reraLogo} 
                                     alt="RERA Registered" 
-                                    className="h-16 sm:h-20 object-contain opacity-95 hover:opacity-100 transition-opacity" 
+                                    className="h-20 sm:h-24 object-contain opacity-95 hover:opacity-100 transition-opacity" 
                                 />
                             </div>
                             <div className="flex items-center justify-between w-full gap-2 sm:gap-4">
                                 <button 
                                     onClick={() => setIsModalOpen(true)} 
-                                    className="bg-[#03012C] text-white flex-1 flex items-center justify-center gap-2 py-3 md:py-3.5 text-[10px] sm:text-[11px] md:text-[13px] font-heading tracking-wider hover:bg-[#020118] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-sm"
+                                    className="bg-[#03012C] text-white flex-1 flex items-center justify-center gap-2 px-2 py-3 md:py-3.5 text-[8px] sm:text-[10px] md:text-[12px] font-heading tracking-wider hover:bg-[#020118] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-sm"
                                 >
                                     <svg className="w-4 h-4 md:w-5 md:h-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -105,7 +105,7 @@ const AboutUs = () => {
                                 </button>
                                 <button 
                                     onClick={() => setIsModalOpen(true)} 
-                                    className="bg-[#6B6B6B] text-white flex-1 flex items-center justify-center gap-2 py-3 md:py-3.5 text-[10px] sm:text-[11px] md:text-[13px] font-heading tracking-wider hover:bg-[#525252] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-sm"
+                                    className="bg-[#6B6B6B] text-white flex-1 flex items-center justify-center gap-2 px-2 py-3 md:py-3.5 text-[8px] sm:text-[10px] md:text-[12px] font-heading tracking-wider hover:bg-[#525252] hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap shadow-sm"
                                 >
                                     <svg className="w-4 h-4 md:w-5 md:h-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
