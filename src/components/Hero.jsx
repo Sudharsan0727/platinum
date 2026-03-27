@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PhoneInputField from './PhoneInputField';
 import heroBg from '../assets/img/Platinum_banner.jpeg';
-<<<<<<< HEAD
-import heroMobileBg from '../assets/img/Platinum_Mobilebanner.jpeg';
-=======
->>>>>>> 49f5ea1 (feat: update hero banner image)
 import { submitLead } from '../utils/submitLead';
 
 import SuccessModal from './SuccessModal';
@@ -62,11 +58,7 @@ const Hero = () => {
       {/* Banner Image - Mobile (Full Width View) */}
       <div className="lg:hidden w-full relative z-0 mt-0 overflow-hidden shadow-sm">
         <img 
-<<<<<<< HEAD
-          src={heroMobileBg} 
-=======
           src={heroBg} 
->>>>>>> 49f5ea1 (feat: update hero banner image)
           alt="Radiance Platinum Banner" 
           className="w-full h-auto block"
           fetchPriority="high"
