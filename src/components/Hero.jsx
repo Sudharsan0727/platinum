@@ -60,6 +60,7 @@ const Hero = () => {
       <div className="lg:hidden w-full relative z-0 mt-0 overflow-hidden shadow-sm">
         <img 
           src={heroMobileBg} 
+
           alt="Radiance Platinum Banner" 
           className="w-full h-auto block"
           fetchPriority="high"
