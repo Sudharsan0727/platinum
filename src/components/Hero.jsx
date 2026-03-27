@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PhoneInputField from './PhoneInputField';
 import heroBg from '../assets/img/Platinum_banner.jpeg';
+import heroMobileBg from '../assets/img/Platinum_Mobilebanner.jpeg';
 import { submitLead } from '../utils/submitLead';
 
 import SuccessModal from './SuccessModal';
@@ -58,7 +59,7 @@ const Hero = () => {
       {/* Banner Image - Mobile (Full Width View) */}
       <div className="lg:hidden w-full relative z-0 mt-0 overflow-hidden shadow-sm">
         <img 
-          src={heroBg} 
+          src={heroMobileBg} 
           alt="Radiance Platinum Banner" 
           className="w-full h-auto block"
           fetchPriority="high"
