@@ -53,11 +53,14 @@ const HomePage = () => {
 
 function App() {
   return (
-    <Router basename="/Platinum/">
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-white">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/thankyou" element={<ThankYou />} />
+          <Route path="/ThankYou" element={<ThankYou />} />
+          <Route path="/ThankYou/" element={<ThankYou />} />
         </Routes>
       </div>
     </Router>

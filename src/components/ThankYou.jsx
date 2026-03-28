@@ -69,8 +69,8 @@ const ThankYou = () => {
                     </div>
 
                     {/* Action Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-up animate-delay-1 mt-12">
-                        {/* Route Map Video */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-up animate-delay-1 mt-12">
+                        {/* Route Map Video (Hidden)
                         <a 
                             href="https://www.youtube.com/watch?v=AKVrvOVASz0" 
                             target="_blank" 
@@ -93,7 +93,7 @@ const ThankYou = () => {
                                 Watch Video
                             </span>
                         </a>
-
+                        */}
                         {/* Walkthrough */}
                         <a 
                             href="https://www.youtube.com/watch?v=_b2nDeZKohI" 
