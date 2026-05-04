@@ -24,12 +24,22 @@ const transporter = nodemailer.createTransport({
 
 
 app.post('/send-email', (req, res) => {
-    const { fullName, email, mobile, project } = req.body;
+    const { fullName, email, mobile, project, interestedProject } = req.body;
+
+    const projectUrls = {
+        "Radiance Eternity": "https://radiancedevelopers.com/radianceeternity/",
+        "Radiance Riverwoods": "https://radiancedevelopers.com/riverwoods/",
+        "Radiance Imperia": "https://radiancedevelopers.com/imperia/",
+        "Radiance Platinum": "https://radiancedevelopers.com/platinum/",
+        "Radiance Solitaire": "https://radiancedevelopers.com/solitaire/"
+    };
+
+    const projectUrl = projectUrls[project] || "https://radiancedevelopers.com/";
 
     const mailOptions = {
-        from: '"Radiance Eternity Website" <radiancewebenquiry@gmail.com>',
-        to: 'radiancewebenquiry@gmail.com',
-        subject: `New Lead Enquiry - ${fullName}`,
+        from: `"${project} Website" <radiancewebenquiry@gmail.com>`,
+        to: 'karthik@radiancerealty.in',
+        subject: `New Lead Enquiry - ${fullName} (${project})`,
         html: `
             <!DOCTYPE html>
             <html>
@@ -52,7 +62,7 @@ app.post('/send-email', (req, res) => {
             <body>
                 <div class="email-container">
                     <div class="header">
-                        <h1>RADIANCE ETERNITY</h1>
+                        <h1>RADIANCE</h1>
                     </div>
                     <div class="content">
                         <h2>New Lead Notification</h2>
@@ -60,8 +70,12 @@ app.post('/send-email', (req, res) => {
                         
                         <div class="lead-details">
                             <div class="detail-item">
-                                <span class="label">Project:</span>
+                                <span class="label">Project Name:</span>
                                 <span class="value">${project}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Project URL:</span>
+                                <span class="value"><a href="${projectUrl}" style="color: #9b7a44; text-decoration: none;">${projectUrl}</a></span>
                             </div>
                             <div class="detail-item">
                                 <span class="label">Full Name:</span>
@@ -80,7 +94,7 @@ app.post('/send-email', (req, res) => {
                         <p style="margin-top: 30px;">Please follow up with the lead at the earliest convenience.</p>
                     </div>
                     <div class="footer">
-                        <p>This is an automated notification from <span class="brand-name">Radiance Eternity</span> Website.</p>
+                        <p>This is an automated notification from <span class="brand-name">${project}</span> Website.</p>
                         <p>&copy; ${new Date().getFullYear()} Radiance Realty. All Rights Reserved.</p>
                     </div>
                 </div>
@@ -90,6 +104,7 @@ app.post('/send-email', (req, res) => {
 
     };
 
+    console.log(`Attempting to send email to: ${mailOptions.to} with subject: ${mailOptions.subject}`);
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error('Email sending error:', error);
@@ -103,4 +118,3 @@ app.post('/send-email', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
-

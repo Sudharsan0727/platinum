@@ -51,7 +51,7 @@ export const submitLead = (formData) => {
     utm_source: urlParams.get('utm_source') || "",
   };
 
-  const salesforceUrl = "https://radiancerealty--partial.sandbox.my.salesforce-sites.com/extrenalsource/services/apexrest/createLead";
+  const salesforceUrl = "https://radiancerealty.my.salesforce-sites.com/LeadService/services/apexrest/createLead";
 
   // Trigger Salesforce API (Background)
   fetch(salesforceUrl, {
